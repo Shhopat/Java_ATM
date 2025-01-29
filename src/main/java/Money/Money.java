@@ -7,12 +7,12 @@ public class Money {
         this.count = count;
     }
 
-    public String getCount() {
+    public String getBalance() {
 
         return "your balance: " + count;
     }
 
-    public void setCount(double count) {
+    public void setBalance(double count) {
         this.count = count;
     }
 }

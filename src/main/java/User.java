@@ -51,11 +51,19 @@ public class User {
         switch (choice) {
             case 1 -> {
                 wallet.add(new USD());
-                System.out.println("Successfully!");
+                System.out.println("Successfully! add: " + USD.class.getSimpleName());
+                for (Money money : getWallet()) {
+                    System.out.println(name + " " + password + " ");
+                    money.getBalance();
+                }
             }
             case 2 -> {
                 wallet.add(new RUB());
-                System.out.println("Successfully!");
+                System.out.println("Successfully! add: " + RUB.class.getSimpleName());
+                for (Money money : getWallet()) {
+                    System.out.println(name + " " + password + " ");
+                    money.getBalance();
+                }
             }
         }
 

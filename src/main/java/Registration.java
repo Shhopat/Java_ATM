@@ -46,6 +46,14 @@ public class Registration {
             } else {
                 users.add(new User(name, password));
                 System.out.println("Registration was successfully");
+                System.out.println("do you want to add money ? If do agree to write yes");
+                if (bufferedReader.readLine().equals("yes")) {
+                    for (User user : users) {
+                        if (user.getName().equals(name) && user.getPassword() == password) {
+                            user.addValuta();
+                        }
+                    }
+                }
                 break;
             }
         }
@@ -109,6 +117,7 @@ public class Registration {
             registration();
         }
     }
+
     public static void entryTake() throws IOException {
         System.out.println("write your login and password for entry");
         String name = bufferedReader.readLine();

@@ -36,9 +36,11 @@ public class Display {
             switch (choosing) {
                 case 1 -> {
                     Registration.checkRegistration();
+
                 }
                 case 2 -> {
                     Registration.entryDeposit();
+
 
                 }
                 case 3 -> {

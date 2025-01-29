@@ -15,9 +15,10 @@ public class Money {
     public Money() {
     }
 
-    public String getBalance() {
+    public void getBalance() {
 
-        return "your balance: " + count + " " + getClass().getSimpleName();
+        System.out.print("your balance: " + count + " " + getClass().getSimpleName());
+        System.out.println();
     }
 
     public void Deposit() throws IOException {
